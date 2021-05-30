@@ -1,7 +1,7 @@
 function load_content(path) {
-	fetch(path, { mode: "no-cors", }).then(function(response) {
+	fetch(path, { mode: "no-cors", }).then(async function(response) {
 	  if(response.ok) {
-		document.getElementsByTagName("main")[0].innerHTML = response.text();
+		document.getElementsByTagName("main")[0].innerHTML = await response.text();
 	  } else {
 	    console.log('Net OK but HTTP Error');
 	  }
