@@ -16,19 +16,25 @@
 			<!-- Navigation: lista de enlaces para desplazarse por la página -->
 			<nav>
 				<!-- Header layout -->
-				<div>
-					<div>
-						<!-- Logo guadalsistema y texto -->
+				<div><!-- div and nav redundant, for decouple layout of semantic, but probably its better remove -->
+					<div class="logo">
+							<div class="logo-image">
+								<!-- image logo -->
+							</div>
+							<div class="logo-name">
+								<span id="logo-first-name">guadal</span>
+								<span id="logo-second-name">sistema</span>
+							</div>
 					</div>
 					<div>
 						<!-- Lista de enlaces -->
-						<a class="flat-button" onclick="load_content('static/html/integrations.html');">Integraciones</a>
-						<a class="flat-button" onclick="load_content('static/html/erp_odoo.html');">ERP odoo</a>
-						<a class="flat-button" onclick="load_content('static/html/apps.html');">App Movil</a>
+						<a class="flat-button" id="integration">Integraciones</a>
+						<a class="flat-button" id="erp-odoo">ERP odoo</a>
+						<a class="flat-button" id="apps">App Movil</a>
 					</div>
 					<div>
 						<!-- No conozco forma de ponerlo a parte con flex, lo pongo separado -->
-						<a class="elevated-button" onclick="load_content('static/html/contactus.html');">Contacta</a>
+						<a class="elevated-button contact-us">Contacta</a>
 					</div>
 				</div>
 			</nav>

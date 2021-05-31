@@ -9,20 +9,33 @@
 }
 
 header {
-	background: #ffffff;
+	background: white;
 }
 
 main {
 	background: #efefef;
 }
 
+#logo-first-name {
+	font-weight: bold;
+	color: var(--main-color);
+}
+
 .flat-button {
 	color: var(--main-color);
-
 }
 
 .elevated-button {
+	border-radius: 8px;
+	font-weight: bold;
+	padding:8px;
 	background: var(--main-color);
+	color: white;
+}
+
+main :is(h1, h2, h3, h4, h5, h6) {
+	font-weight: bold;
+	color: var(--main-color);
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */
@@ -34,5 +47,6 @@ main {
 /* @media (min-width:961px)  { tablet, landscape iPad, lo-res laptops ands desktops } */
 /* big landscape tablets, laptops, and desktops */
 @media (min-width:1025px) {
+	/* TODO */
 }
 /* @media (min-width:1281px) { hi-res laptops and desktops } */
