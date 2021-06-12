@@ -20,9 +20,16 @@ while getopts "hvp:n:" flag
 do
 	case "$flag" in
 		h) usage; exit 0;;
-		p) if [ ${OPTARG} =~ is_number ]; then PORT_NUMBER=${OPTARG};;
+		p)
+			if echo "${OPTARG}" | grep -Eq "${is_number}"; then
+				PORT_NUMBER=${OPTARG}
+			else
+				echo "Error: ${OPTARG}"" is not a valid port number"
+				exit 1
+			fi
+			;;
 		n) CONTAINER_NAME="${OPTARG}";;
-		*) usage; exit 0;;
+		*) usage; exit 1;;
 	esac
 done
 
