@@ -7,35 +7,29 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 		<!-- -->
+		<link rel="icon" href="static/img/icon/favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="static/css/style.css">
 		<script src="static/js/index.js" defer></script>
 	</head>
 	<body>
 		<!-- page content -->
 		<header>
-			<!-- Navigation: lista de enlaces para desplazarse por la página -->
 			<nav>
 				<!-- Header layout -->
-				<div><!-- div and nav redundant, for decouple layout of semantic, but probably its better remove -->
-					<div class="logo">
-							<div class="logo-image">
-								<!-- image logo -->
-							</div>
-							<div class="logo-name">
-								<span id="logo-first-name">guadal</span>
-								<span id="logo-second-name">sistema</span>
-							</div>
+				<div class="logo">
+					<img src="static/img/logo_512_512.png" alt="logo">
+					<div class="logo-name">
+						<span id="logo-first-name">guadal</span>
+						<span id="logo-second-name">sistema</span>
 					</div>
-					<div>
-						<!-- Lista de enlaces -->
-						<a class="flat-button" id="integration">Integraciones</a>
-						<a class="flat-button" id="erp-odoo">ERP odoo</a>
-						<a class="flat-button" id="apps">App Movil</a>
-					</div>
-					<div>
-						<!-- No conozco forma de ponerlo a parte con flex, lo pongo separado -->
-						<a class="elevated-button contact-us">Contacta</a>
-					</div>
+				</div>
+				<div>
+					<a class="flat-button link" id="integration">Integraciones</a>
+					<a class="flat-button link" id="erp-odoo">ERP odoo</a>
+					<a class="flat-button link" id="apps">App Movil</a>
+				</div>
+				<div>
+					<a class="elevated-button contact-us link">Contacta</a>
 				</div>
 			</nav>
 		</header>
