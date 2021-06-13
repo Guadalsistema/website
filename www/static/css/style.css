@@ -21,7 +21,7 @@ img {
 
 header {
 	background: white;
-	height: 56px; /* Magic number copied from youtube, i dont have a better proposition */
+	height: 112px; /* Magic number copied from youtube, i dont have a better proposition */
 }
 
 header > nav {
@@ -100,6 +100,7 @@ main :is(h1, h2, h3, h4, h5, h6) {
 /* end main file html */
 
 @media (min-width:641px) {
+
 	header > nav .logo > .logo-name {
 		font-size: 1.5em;
 		text-transform: capitalize;
@@ -120,3 +121,8 @@ main :is(h1, h2, h3, h4, h5, h6) {
 	}
 }
 
+@media (min-width:769px) {
+	header {
+		height: 56px; /* Magic number copied from youtube, i dont have a better proposition */
+	}
+}
