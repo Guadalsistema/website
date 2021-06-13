@@ -16,7 +16,7 @@ body {
 }
 
 img {
-	max-height: 100%;
+	max-width: 100%;
 }
 
 header {
@@ -37,8 +37,8 @@ header > nav > * {
 
 header > nav > .logo {
 	height: 100%;
-	flex: 1;
 	display: flex;
+	flex: 1;
 }
 
 .logo img {
@@ -53,6 +53,16 @@ header > nav .logo > .logo-name {
 	justify-content: center;
 }
 
+header > nav .links-header {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+header > nav .links-header > .link {
+	margin-right: 8px;
+}
+
+/* Main file html */
 main {
 	height: 100%;
 }
@@ -78,15 +88,8 @@ main :is(h1, h2, h3, h4, h5, h6) {
 	color: var(--main-color);
 }
 
-/* Gonzalo */
 .image-container {
 	display: none;
-}
-
-.image-sup {
-	display: inline;
-	max-width: 300px;
-	margin: auto;
 }
 
 .grid {
@@ -94,10 +97,7 @@ main :is(h1, h2, h3, h4, h5, h6) {
 	grid-template-columns: 1fr;
 	grid-column-gap: 10px;
 }
-
-.image-container img, .image-sup img {
-	width: 100%;
-}
+/* end main file html */
 
 @media (min-width:641px) {
 	header > nav .logo > .logo-name {
@@ -108,10 +108,6 @@ main :is(h1, h2, h3, h4, h5, h6) {
 		align-items: center;
 	}
 
-	.image-sup {
-		display: none;
-	}
-
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -119,7 +115,6 @@ main :is(h1, h2, h3, h4, h5, h6) {
 	}
 
 	.image-container {
-		max-width: 300px;
 		margin: auto;
 		display: inline;
 	}

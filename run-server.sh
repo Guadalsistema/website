@@ -46,6 +46,8 @@ else
 	exit 1
 fi
 
+# todo if the container exist start
+
 "${CONTAINER_ENGINE}" run --rm -d \
 	--name "${CONTAINER_NAME}" \
 	-p "${PORT_NUMBER}:80" \
